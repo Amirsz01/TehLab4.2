@@ -9,6 +9,7 @@ class many
 	int size;
 public:
 	void show();
+	T* getData();
 	many();
 	many(int size);
 	~many();

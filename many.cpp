@@ -17,6 +17,12 @@ void many<T>::show()
 	cout << endl;
 }
 
+template<typename T>
+T* many<T>::getData()
+{
+	return data;
+}
+
 template <typename T>
 many<T>::many()
 {

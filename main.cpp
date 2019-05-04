@@ -1,11 +1,12 @@
 #include <iostream>
+#include "Functions.h"
 #include </Users/Amirsz/source/repos/ТестовыйСтенд/ТестовыйСтенд4/many.h>
 int main()
 {
 	setlocale(LC_ALL, "Rus");
 	int callback;
-	many <double> Many(10);
-	many <double> Many2(5);
+	int calltype;
+	string s = "abc";
 	while (true)
 	{
 		system("cls");
@@ -13,37 +14,33 @@ int main()
 			<< "1. Объединение множеств" << endl
 			<< "2. Пересечение множеств" << endl
 			<< "3. Сравнение множеств" << endl
-			<< "4. Показать множества" << endl
 			<< "0. Выход" << endl;
 		cin >> callback;
-		switch (callback)
-		{
-		case 1:
-			cout << "Было: " << endl;
-			Many.show();
-			Many + Many2;
-			cout << "Стало: " << endl;
-			Many.show();
-			break;
-		case 2:
-			cout << "Было: " << endl;
-			Many.show();
-			Many * Many2;
-			cout << "Стало: " << endl;
-			Many.show();
-			break;
-		case 3:
-			Many < Many2;
-			break;
-		case 4:
-			cout << "Первое множество: " << endl;
-			Many.show();
-			cout << "Второе множество: " << endl;
-			Many2.show();
-			break;
-		case 0:
+		if (!callback)
 			return 0;
-		default:
+		system("cls");
+		cout << "Меню выбора типа элементов массива:" << endl
+			<< "1. int" << endl
+			<< "2. char" << endl
+			<< "3. float" << endl
+			<< "4. double" << endl
+			<< "5. string" << endl;
+		cin >> calltype;
+		switch (calltype) {
+		case 1: 
+			worker(callback, 1);
+			break;
+		case 2: 
+			worker(callback, 'c');
+			break;
+		case 3: 
+			worker(callback, 1.0f);
+			break;
+		case 4: 
+			worker(callback, 1.0);
+			break;
+		case 5: 
+			worker(callback, s);
 			break;
 		}
 		system("pause");
