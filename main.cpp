@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Functions.h"
-#include </Users/Amirsz/source/repos/ÒåñòîâûéÑòåíä/ÒåñòîâûéÑòåíä4/many.h>
+#include </Users/Amirsz/source/repos/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´4/many.h>
 int main()
 {
 	setlocale(LC_ALL, "Rus");
@@ -10,16 +10,16 @@ int main()
 	while (true)
 	{
 		system("cls");
-		cout << "Âûáåðèòå ïóíêò : " << endl
-			<< "1. Îáúåäèíåíèå ìíîæåñòâ" << endl
-			<< "2. Ïåðåñå÷åíèå ìíîæåñòâ" << endl
-			<< "3. Ñðàâíåíèå ìíîæåñòâ" << endl
-			<< "0. Âûõîä" << endl;
+		cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿ÑƒÐ½ÐºÑ‚ : " << endl
+			<< "1. ÐžÐ±ÑŠÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ðµ Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²" << endl
+			<< "2. ÐŸÐµÑ€ÐµÑÐµÑ‡ÐµÐ½Ð¸Ðµ Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²" << endl
+			<< "3. Ð¡Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²" << endl
+			<< "0. Ð’Ñ‹Ñ…Ð¾Ð´" << endl;
 		cin >> callback;
 		if (!callback)
 			return 0;
 		system("cls");
-		cout << "Ìåíþ âûáîðà òèïà ýëåìåíòîâ ìàññèâà:" << endl
+		cout << "ÐœÐµÐ½ÑŽ Ð²Ñ‹Ð±Ð¾Ñ€Ð° Ñ‚Ð¸Ð¿Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°:" << endl
 			<< "1. int" << endl
 			<< "2. char" << endl
 			<< "3. float" << endl
