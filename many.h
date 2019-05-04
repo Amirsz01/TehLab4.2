@@ -18,4 +18,4 @@ public:
 	bool operator<(const many<T>& op2);
 };
 
-#include "/Users/Amirsz/source/repos/ТестовыйСтенд/ТестовыйСтенд4/many.cpp"
+#include "/Users/Amirsz/source/repos/РўРµСЃС‚РѕРІС‹Р№РЎС‚РµРЅРґ/РўРµСЃС‚РѕРІС‹Р№РЎС‚РµРЅРґ4/many.cpp"
