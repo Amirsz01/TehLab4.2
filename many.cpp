@@ -1,7 +1,7 @@
-#ifndef PARAM_MASS_CPP
-#define PARAM_MASS_CPP
+#ifndef MANY
+#define MANY
 
-#include "/Users/Amirsz/source/repos/ТестовыйСтенд/ТестовыйСтенд4/many.h"
+#include "/Users/Amirsz/source/repos/РўРµСЃС‚РѕРІС‹Р№РЎС‚РµРЅРґ/РўРµСЃС‚РѕРІС‹Р№РЎС‚РµРЅРґ4/many.h"
 #include <iostream>
 #include <ctime>
 #include <string>
@@ -38,7 +38,7 @@ many<T>::many(int size)
 	{
 		if (size <= 0)
 		{
-			string s = "Ошибка! Размер 0 или Отрицательный";
+			string s = "РћС€РёР±РєР°! Р Р°Р·РјРµСЂ 0 РёР»Рё РћС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Р№";
 			throw s;
 		}
 		this->data = new T[size];
@@ -140,11 +140,11 @@ bool many<T>::operator<(const many<T>& op2)
 		}
 		if (!flag)
 		{
-			cout << "Множества различны" << endl;
+			cout << "РњРЅРѕР¶РµСЃС‚РІР° СЂР°Р·Р»РёС‡РЅС‹" << endl;
 			return false;
 		}
 	}
-	cout << "Множество является подмножеством другого" << endl;
+	cout << "РњРЅРѕР¶РµСЃС‚РІРѕ СЏРІР»СЏРµС‚СЃСЏ РїРѕРґРјРЅРѕР¶РµСЃС‚РІРѕРј РґСЂСѓРіРѕРіРѕ" << endl;
 	return true;
 }
 #endif
