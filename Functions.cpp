@@ -13,7 +13,7 @@ void worker(int func, T)
 
 	int size;
 
-	cout << "Ââåäèòå ðàçìåð ìàññèâà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	cin >> size;
 
 	many<T> first_mass(size);
@@ -21,7 +21,7 @@ void worker(int func, T)
 
 	system("cls");
 
-	cout << "Çàïîëíåíèå ïåðâîãî ìàññèâà: " << endl;
+	cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¿ÐµÑ€Ð²Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << endl;
 	T* ptr = first_mass.getData();
 	for (int i = 0; i < size; i++)
 	{
@@ -30,7 +30,7 @@ void worker(int func, T)
 	cout << endl;
 
 	ptr = second_mass.getData();
-	cout << "Çàïîëíåíèå âòîðîãî ìàññèâà: " << endl;
+	cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð²Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << endl;
 	for (int i = 0; i < size; i++)
 	{
 		cin >> ptr[i];
@@ -39,10 +39,10 @@ void worker(int func, T)
 
 	system("cls");
 
-	cout << "Ïåðâûé ìàññèâ: ";
+	cout << "ÐŸÐµÑ€Ð²Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	first_mass.show();
 
-	cout << "Âòîðîé ìàññèâ: ";
+	cout << "Ð’Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	second_mass.show();
 	cout << endl;
 	switch (func)
@@ -57,10 +57,10 @@ void worker(int func, T)
 		first_mass < second_mass;
 		return;
 	}
-	cout << "Ïîñëå èçìåíåíèé " << endl;
-	cout << "Ïåðâûé ìàññèâ: ";
+	cout << "ÐŸÐ¾ÑÐ»Ðµ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹ " << endl;
+	cout << "ÐŸÐµÑ€Ð²Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	first_mass.show();
-	cout << "Âòîðîé ìàññèâ: ";
+	cout << "Ð’Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	second_mass.show();
 }
 #endif
